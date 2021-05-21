@@ -9,3 +9,4 @@ end
 require_relative "hrworks/client"
 require_relative "hrworks/request"
 require_relative "hrworks/request/get_persons"
+require_relative "hrworks/request/get_person_master_data"
