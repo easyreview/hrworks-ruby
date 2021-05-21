@@ -14,7 +14,7 @@ module Hrworks
           "onlyActive" => only_active
         }.compact
 
-        super
+        super()
       end
     end
   end

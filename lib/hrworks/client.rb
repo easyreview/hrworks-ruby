@@ -78,9 +78,9 @@ module Hrworks
     def parsed_response(raw_response)
       case raw_response.code
       when STATUS_CODE_SUCCESS, STATUS_CODE_CREATED
-        JSON.parse(response.body)
+        JSON.parse(raw_response.body)
       else
-        raise ResponseError, response
+        raise ResponseError, raw_response
       end
     end
 
